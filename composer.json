@@ -1,0 +1,46 @@
+{
+    "name": "masgeek/payment",
+    "description": "Payment tool for card and mpesa",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sammy Barasa",
+            "email": "barsamms@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=5.6.0",
+        "safaricom/mpesa": "^1.0",
+        "vlucas/phpdotenv": "^2.4",
+        "guzzlehttp/guzzle": "^6.3",
+        "filp/whoops": "^2.1",
+        "apache/log4php": "^2.3",
+        "adodb/adodb-php": "^5.20",
+        "symfony/var-dumper": "^3.4",
+        "nategood/httpful": "^0.2.20",
+        "catfan/medoo": "^1.5"
+	},
+    "config": {
+        "process-timeout": 1800,
+        "sort-packages": true,
+        "fxp-asset": {
+            "enabled": false
+        }
+    },
+    "scripts": {
+        "pre-update-cmd": [
+            "yarn install --check-files"
+        ],
+        "post-create-project-cmd": [
+            "yii\\composer\\Installer::postCreateProject"
+        ],
+        "post-install-cmd": [
+            "yarn"
+        ],
+        "post-update-cmd": [
+            "yarn autoclean --force"
+        ]
+    }
+}

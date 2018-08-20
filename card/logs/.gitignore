@@ -6,6 +6,7 @@
 
 # ... except the .gitignore...
 !.gitignore
+!file-2018-02-21.log
 
 # ... and all text files.
 !*.txt

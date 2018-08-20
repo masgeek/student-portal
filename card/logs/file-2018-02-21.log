@@ -1,0 +1,94 @@
+INFO - Array
+(
+    [auth_cv_result] => M
+    [req_card_number] => 411111xxxxxx1111
+    [req_locale] => en
+    [signature] => 8ortG9G1TLB99bQckCdXUKZuOQPL5ah3QjvtL10Wvfg=
+    [req_card_type_selection_indicator] => 1
+    [auth_trans_ref_no] => 5192189236156802804106
+    [payer_authentication_enroll_veres_enrolled] => U
+    [req_bill_to_surname] => Barasa
+    [req_bill_to_address_city] => Thika
+    [payer_authentication_proof_xml] => &lt;AuthProof&gt;&lt;Time&gt;2018 Feb 21 13:15:24&lt;/Time&gt;&lt;DSUrl&gt;https://csrtestcustomer34.cardinalcommerce.com/merchantacsfrontend/vereq.jsp?acqid=CYBS&lt;/DSUrl&gt;&lt;VEReqProof&gt;&lt;Message id=&quot;8T2mbuIUvQt3L0R11Fr0&quot;&gt;&lt;VEReq&gt;&lt;version&gt;1.0.2&lt;/version&gt;&lt;pan&gt;XXXXXXXXXXXX1111&lt;/pan&gt;&lt;Merchant&gt;&lt;acqBIN&gt;469216&lt;/acqBIN&gt;&lt;merID&gt;341422420000000&lt;/merID&gt;&lt;password&gt;&lt;/password&gt;&lt;/Merchant&gt;&lt;Browser&gt;&lt;deviceCategory&gt;0&lt;/deviceCategory&gt;&lt;accept&gt;*/*&lt;/accept&gt;&lt;userAgent&gt;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36&lt;/userAgent&gt;&lt;/Browser&gt;&lt;/VEReq&gt;&lt;/Message&gt;&lt;/VEReqProof&gt;&lt;VEResProof&gt;&lt;Message id=&quot;8T2mbuIUvQt3L0R11Fr0&quot;&gt;&lt;VERes&gt;&lt;version&gt;1.0.2&lt;/version&gt;&lt;CH&gt;&lt;enrolled&gt;U&lt;/enrolled&gt;&lt;/CH&gt;&lt;protocol&gt;ThreeDSecure&lt;/protocol&gt;&lt;/VERes&gt;&lt;/Message&gt;&lt;/VEResProof&gt;&lt;/AuthProof&gt;
+    [req_card_expiry_date] => 02-2019
+    [req_bill_to_address_postal_code] => 00100
+    [reason_code] => 100
+    [auth_amount] => 10.00
+    [auth_response] => 00
+    [bill_trans_ref_no] => 5192189236156802804106
+    [req_bill_to_forename] => Sammy
+    [req_payment_method] => card
+    [request_token] => Ahj//wSTGXgZuOMVBCmKTSzVi5ZMXDlkzbMWrZwwZOGDRiwbJcXJBgJoClxckGAmsoK+h90hk0kyxdfA7eAMCcmMvAzccYqCFMUAEUQA
+    [auth_time] => 2018-02-21T131523Z
+    [req_amount] => 10.00
+    [req_bill_to_email] => barsamms@gmail.com
+    [payer_authentication_reason_code] => 100
+    [auth_avs_code_raw] => Y
+    [payer_authentication_enroll_e_commerce_indicator] => internet
+    [transaction_id] => 5192189236156802804106
+    [req_currency] => KES
+    [req_card_type] => 001
+    [decision] => ACCEPT
+    [message] => Request was processed successfully.
+    [signed_field_names] => transaction_id,decision,req_access_key,req_profile_id,req_transaction_uuid,req_transaction_type,req_reference_number,req_amount,req_currency,req_locale,req_payment_method,req_bill_to_forename,req_bill_to_surname,req_bill_to_email,req_bill_to_address_line1,req_bill_to_address_city,req_bill_to_address_state,req_bill_to_address_country,req_bill_to_address_postal_code,req_card_number,req_card_type,req_card_type_selection_indicator,req_card_expiry_date,message,reason_code,auth_avs_code,auth_avs_code_raw,auth_response,auth_amount,auth_code,auth_cv_result,auth_cv_result_raw,auth_trans_ref_no,auth_time,request_token,bill_trans_ref_no,payer_authentication_proof_xml,payer_authentication_reason_code,payer_authentication_enroll_e_commerce_indicator,payer_authentication_enroll_veres_enrolled,signed_field_names,signed_date_time
+    [req_transaction_uuid] => 5a8d70d50f1c8
+    [auth_avs_code] => Y
+    [auth_code] => 831000
+    [req_bill_to_address_country] => KE
+    [req_transaction_type] => sale
+    [req_access_key] => f9fc9a33baba35bd8066da9d5c45fde1
+    [auth_cv_result_raw] => M
+    [req_profile_id] => 066620B5-2B5D-49FD-88DC-C4CBA247122A
+    [req_reference_number] => 20180221131501
+    [req_bill_to_address_state] => Thika
+    [signed_date_time] => 2018-02-21T13:15:23Z
+    [req_bill_to_address_line1] => PO Box 9 Thika
+)
+
+INFO - Array
+(
+    [auth_cv_result] => M
+    [req_card_number] => 411111xxxxxx1111
+    [req_locale] => en
+    [signature] => ngmUqZmgjb3WenodYdwCXx6pCDD28Onv0Zw7beaBqaI=
+    [req_card_type_selection_indicator] => 1
+    [auth_trans_ref_no] => 5192331497366910504108
+    [payer_authentication_enroll_veres_enrolled] => U
+    [req_bill_to_surname] => Barasa
+    [req_bill_to_address_city] => Thika
+    [payer_authentication_proof_xml] => &lt;AuthProof&gt;&lt;Time&gt;2018 Feb 21 17:12:30&lt;/Time&gt;&lt;DSUrl&gt;https://csrtestcustomer34.cardinalcommerce.com/merchantacsfrontend/vereq.jsp?acqid=CYBS&lt;/DSUrl&gt;&lt;VEReqProof&gt;&lt;Message id=&quot;ObzSlZ4uLTDZEy3PMIR0&quot;&gt;&lt;VEReq&gt;&lt;version&gt;1.0.2&lt;/version&gt;&lt;pan&gt;XXXXXXXXXXXX1111&lt;/pan&gt;&lt;Merchant&gt;&lt;acqBIN&gt;469216&lt;/acqBIN&gt;&lt;merID&gt;341422420000000&lt;/merID&gt;&lt;password&gt;&lt;/password&gt;&lt;/Merchant&gt;&lt;Browser&gt;&lt;deviceCategory&gt;0&lt;/deviceCategory&gt;&lt;accept&gt;*/*&lt;/accept&gt;&lt;userAgent&gt;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.168 Safari/537.36&lt;/userAgent&gt;&lt;/Browser&gt;&lt;/VEReq&gt;&lt;/Message&gt;&lt;/VEReqProof&gt;&lt;VEResProof&gt;&lt;Message id=&quot;ObzSlZ4uLTDZEy3PMIR0&quot;&gt;&lt;VERes&gt;&lt;version&gt;1.0.2&lt;/version&gt;&lt;CH&gt;&lt;enrolled&gt;U&lt;/enrolled&gt;&lt;/CH&gt;&lt;protocol&gt;ThreeDSecure&lt;/protocol&gt;&lt;/VERes&gt;&lt;/Message&gt;&lt;/VEResProof&gt;&lt;/AuthProof&gt;
+    [req_card_expiry_date] => 03-2018
+    [req_bill_to_address_postal_code] => 00100
+    [reason_code] => 100
+    [auth_amount] => 10.00
+    [auth_response] => 00
+    [bill_trans_ref_no] => 5192331497366910504108
+    [req_bill_to_forename] => Sammy
+    [req_payment_method] => card
+    [request_token] => Ahj//wSTGXoTIrQyzYysTSzVi5ZM2bFo5bs2zZyxYNWDRiwcJcmCsr3YClyYKyvdsoK+h90hk0kyxdfA7eAMCcmMvQmRWhlmxlYAagyK
+    [auth_time] => 2018-02-21T171230Z
+    [req_amount] => 10.00
+    [req_bill_to_email] => barsamms@gmail.com
+    [payer_authentication_reason_code] => 100
+    [auth_avs_code_raw] => Y
+    [payer_authentication_enroll_e_commerce_indicator] => internet
+    [transaction_id] => 5192331497366910504108
+    [req_currency] => KES
+    [req_card_type] => 001
+    [decision] => ACCEPT
+    [message] => Request was processed successfully.
+    [signed_field_names] => transaction_id,decision,req_access_key,req_profile_id,req_transaction_uuid,req_transaction_type,req_reference_number,req_amount,req_currency,req_locale,req_payment_method,req_bill_to_forename,req_bill_to_surname,req_bill_to_email,req_bill_to_address_line1,req_bill_to_address_city,req_bill_to_address_state,req_bill_to_address_country,req_bill_to_address_postal_code,req_card_number,req_card_type,req_card_type_selection_indicator,req_card_expiry_date,message,reason_code,auth_avs_code,auth_avs_code_raw,auth_response,auth_amount,auth_code,auth_cv_result,auth_cv_result_raw,auth_trans_ref_no,auth_time,request_token,bill_trans_ref_no,payer_authentication_proof_xml,payer_authentication_reason_code,payer_authentication_enroll_e_commerce_indicator,payer_authentication_enroll_veres_enrolled,signed_field_names,signed_date_time
+    [req_transaction_uuid] => 5a8da822dfb21
+    [auth_avs_code] => Y
+    [auth_code] => 831000
+    [req_bill_to_address_country] => KE
+    [req_transaction_type] => sale
+    [req_access_key] => f9fc9a33baba35bd8066da9d5c45fde1
+    [auth_cv_result_raw] => M
+    [req_profile_id] => 066620B5-2B5D-49FD-88DC-C4CBA247122A
+    [req_reference_number] => 20180221171058
+    [req_bill_to_address_state] => Thika
+    [signed_date_time] => 2018-02-21T17:12:30Z
+    [req_bill_to_address_line1] => PO Box 9 Thika
+)
+

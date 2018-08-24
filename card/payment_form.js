@@ -1,6 +1,6 @@
 $(function () {
     payment_form = $('form').attr('id');
-    addLinkToSetDefaults();
+   // addLinkToSetDefaults();
 });
 
 

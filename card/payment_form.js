@@ -5,12 +5,12 @@ $(function () {
 
 
 function setDefaultsForAll() {
-         if (payment_form === "payment_confirmation"){
-      setDefaultsForUnsignedDetailsSection();
-   }
-   else {
-      setDefaultsForPaymentDetailsSection();
-   } 
+    if (payment_form === "payment_confirmation") {
+        setDefaultsForUnsignedDetailsSection();
+    }
+    else {
+        setDefaultsForPaymentDetailsSection();
+    }
 }
 
 function addLinkToSetDefaults() {
@@ -22,7 +22,7 @@ function addLinkToSetDefaults() {
 
         newlink = $(document.createElement("a"));
         newlink.attr({
-            id:'link-' + i, name:'link' + i, href:'#'
+            id: 'link-' + i, name: 'link' + i, href: '#'
         });
         newlink.append(document.createTextNode(legendText));
         newlink.bind('click', function () {
@@ -34,12 +34,16 @@ function addLinkToSetDefaults() {
 
     newbutton = $(document.createElement("input"));
     newbutton.attr({
-        id:'defaultAll', value:'Default All', type:'button', onClick:'setDefaultsForAll()',class:'btn btn-danger btn-sm pull-right'
+        id: 'defaultAll',
+        value: 'Default All',
+        type: 'button',
+        onClick: 'setDefaultsForAll()',
+        class: 'btn btn-danger btn-sm pull-right'
     });
-    newbutton.bind('click', function() {
+    newbutton.bind('click', function () {
         setDefaultsForAll;
     });
-    $("#"+payment_form).append(newbutton);
+    $("#" + payment_form).append(newbutton);
 }
 
 function capitalize(string) {
@@ -53,7 +57,7 @@ function setDefaultsForPaymentDetailsSection() {
     $("input[name='currency']").val("KES");
 }
 
-function setDefaultsForUnsignedDetailsSection(){
+function setDefaultsForUnsignedDetailsSection() {
     $("input[name='card_type']").val("001");
     $("input[name='card_number']").val("4242424242424242");
     $("input[name='card_expiry_date']").val("11-2020");

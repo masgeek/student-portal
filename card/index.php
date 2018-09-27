@@ -4,8 +4,6 @@ $profileID = '066620B5-2B5D-49FD-88DC-C4CBA247122A';
 $amount = number_format(10, 2);
 $transactionRef = 'P52/85958/2016'; //this will be the registration number
 $transactionID = gmdate("YmdHis");
-
-$actionURL = 'https://testsecureacceptance.cybersource.com/pay';
 ?>
 
 <!DOCTYPE html>
@@ -24,7 +22,7 @@ $actionURL = 'https://testsecureacceptance.cybersource.com/pay';
 </div>
 
 <div class="container">
-    <form id="payment_form" action="<?= $actionURL ?>" method="POST">
+    <form id="payment_form" action="payment_confirmation.php" method="POST">
         <input type="hidden" name="access_key" value="<?= $accessKey ?>">
         <input type="hidden" name="profile_id" value="<?= $profileID ?>">
         <input type="hidden" name="transaction_uuid" value="<?= $transactionID ?>">

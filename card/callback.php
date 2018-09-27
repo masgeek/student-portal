@@ -14,3 +14,5 @@ $log = Logger::getLogger('myLogger');
 
 // Start logging
 $log->info($_POST);
+
+var_dump($_REQUEST);

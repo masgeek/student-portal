@@ -6,6 +6,7 @@ $profileID = '066620B5-2B5D-49FD-88DC-C4CBA247122A';
 $amount = number_format(10, 2);
 $transactionRef = 'P52/85958/2016'; //this will be the registration number
 $transactionUUID = uniqid();//uniqid($gmtTimestamp, true);
+$transactionType = 'authorization';
 ?>
 
 <!DOCTYPE html>
@@ -33,7 +34,7 @@ $transactionUUID = uniqid();//uniqid($gmtTimestamp, true);
         <input type="hidden" name="unsigned_field_names">
         <input type="hidden" name="signed_date_time" value="<?= gmdate("Y-m-d\TH:i:s\Z"); ?>">
         <input type="hidden" name="locale" value="en">
-        <input type="hidden" name="transaction_type" value="sale">
+        <input type="hidden" name="transaction_type" value="<?= $transactionType ?>">
         <fieldset>
             <legend>Payment Details</legend>
             <div id="paymentDetailsSection" class="section">

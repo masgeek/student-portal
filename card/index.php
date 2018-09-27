@@ -63,7 +63,6 @@ $signedField = sign($fieldsToSign);
             <input type="submit" id="submit" name="submit" value="Submit"
                    class="btn btn-outline-primary btn-block btn-lg"/>
         </div>
-        >
     </form>
 </div>
 

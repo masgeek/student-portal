@@ -1,7 +1,7 @@
 <?php
 require_once('security.php'); //this sings field s and encrypts data
-$accessKey = 'f9fc9a33baba35bd8066da9d5c45fde1';
-$profileID = '066620B5-2B5D-49FD-88DC-C4CBA247122A';
+$accessKey = 'a16505da386433a580f786f7604e3335';
+$profileID = 'A06B075A-43B6-4BCC-8B7A-D770BFD2D848';
 $amount = number_format(10, 2);
 $transactionRef = 'P52/85958/2016'; //this will be the registration number
 $transactionID = gmdate("YmdHis");

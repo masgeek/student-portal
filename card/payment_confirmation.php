@@ -32,7 +32,7 @@
     }
     echo "<input type=\"hidden\" id=\"signature\" name=\"signature\" value=\"" . sign($params) . "\"/>\n";
     ?>
-    <input class="btn btn-outline-dark btn-lg" type="submit" id="submit" value="Confirm"/>
+    <input class="btn btn-outline-danger btn-lg" type="submit" id="submit" value="Confirm Payment"/>
 </form>
 </body>
 </html>

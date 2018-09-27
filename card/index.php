@@ -48,8 +48,10 @@ $transactionID = gmdate("YmdHis");
                 </div>
 
                 <div class="form-group">
-                    <label for="currency">Currency</label>
-                    <input type="text" readonly="readonly" name="currency" class="form-control" value="KES">
+                    <label for="currency">
+                        Currency
+                        <input type="text" readonly="readonly" name="currency" class="form-control" value="KES">
+                    </label>
                 </div>
         </fieldset>
         <div class="form-group">

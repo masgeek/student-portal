@@ -3,7 +3,7 @@
 <html>
 <head>
     <title>Confirm Payment</title>
-    <link rel="stylesheet" type="text/css" href="payment.css"/>
+    <!--<link rel="stylesheet" type="text/css" href="payment.css"/>-->
     <link rel="stylesheet" type="text/css" href="../vendor/bower-asset/bootstrap/dist/css/bootstrap.css"/>
     <link rel="stylesheet" type="text/css" href="../vendor/bower-asset/font-awesome/css/font-awesome.css"/>
 </head>

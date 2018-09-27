@@ -17,6 +17,7 @@ function buildDataToSign($params)
 {
     $dataToSign = [];
     $signedFieldNames = explode(",", $params["signed_field_names"]);
+
     foreach ($signedFieldNames as $field) {
         $dataToSign[] = $field . "=" . $params[$field];
     }

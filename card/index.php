@@ -2,7 +2,7 @@
 $accessKey = 'f9fc9a33baba35bd8066da9d5c45fde1';
 $profileID = '066620B5-2B5D-49FD-88DC-C4CBA247122A';
 $amount = number_format(10, 2);
-$transactionRef = gmdate("YmdHis"); //this will be the registration number
+$transactionRef = 'P52/85958/2016'; //this will be the registration number
 $transactionID = gmdate("YmdHis");
 ?>
 

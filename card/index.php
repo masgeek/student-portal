@@ -6,7 +6,7 @@ $accessKey = 'a16505da386433a580f786f7604e3335';
 $profileID = 'A06B075A-43B6-4BCC-8B7A-D770BFD2D848';
 $amount = number_format(10, 2);
 $transactionRef = 'P52/85958/2016'; //this will be the registration number
-$transactionID = uniqid($gmtTimestamp, true);
+$transactionUUID = uniqid();//uniqid($gmtTimestamp, true);
 
 //fields that need secuirity signing to protect from attacs and fraud
 $fieldsToSign = 'access_key,profile_id,transaction_uuid,signed_field_names,unsigned_field_names,signed_date_time,locale,transaction_type,reference_number,amount,currency';
@@ -32,7 +32,7 @@ $signedField = sign($fieldsToSign);
     <form id="payment_form" action="https://testsecureacceptance.cybersource.com/pay" method="POST">
         <input type="hidden" name="access_key" value="<?= $accessKey ?>">
         <input type="hidden" name="profile_id" value="<?= $profileID ?>">
-        <input type="hidden" name="transaction_uuid" value="<?= $transactionID ?>">
+        <input type="hidden" name="transaction_uuid" value="<?= $transactionUUID ?>">
         <input type="hidden" name="signed_field_names"
                value="access_key,profile_id,transaction_uuid,signed_field_names,unsigned_field_names,signed_date_time,locale,transaction_type,reference_number,amount,currency">
 

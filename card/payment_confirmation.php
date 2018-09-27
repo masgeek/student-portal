@@ -4,6 +4,7 @@ include 'security.php';
 $amount = $_POST['amount'];
 $refNumber = $_POST['reference_number'];
 $currency = $_POST['currency'];
+$transactionType = $_POST['transaction_type'];
 ?>
 
 <html>
@@ -27,6 +28,7 @@ $currency = $_POST['currency'];
                 <ul class="list-group">
                     <li class="list-group-item">Payment Reference: <?= $refNumber ?></li>
                     <li class="list-group-item">Amount to pay: <?= $currency . ' ' . $amount ?></li>
+                    <li class="list-group-item">Transaction Type: <?= $transactionType ?></li>
                     <li class="list-group-item">
                         <input class="btn btn-outline-danger btn-block" type="submit" id="submit"
                                value="Confirm Payment"/>

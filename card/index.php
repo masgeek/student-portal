@@ -25,7 +25,7 @@ $transactionID = gmdate("YmdHis");
     <form id="payment_form" action="payment_confirmation.php" method="post">
         <input type="hidden" name="access_key" value="<?= $accessKey ?>">
         <input type="hidden" name="profile_id" value="<?= $profileID ?>">
-        <input type="text" name="transaction_uuid" value="<?= $transactionID ?>">
+        <input type="hidden" name="transaction_uuid" value="<?= $transactionID ?>">
         <input type="hidden" name="signed_field_names"
                value="access_key,profile_id,transaction_uuid,signed_field_names,unsigned_field_names,signed_date_time,locale,transaction_type,reference_number,amount,currency">
         <input type="hidden" name="unsigned_field_names">

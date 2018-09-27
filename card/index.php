@@ -2,7 +2,7 @@
 $accessKey = 'f9fc9a33baba35bd8066da9d5c45fde1';
 $profileID = '066620B5-2B5D-49FD-88DC-C4CBA247122A';
 $amount = number_format(10, 2);
-$transactionRef = gmdate("YmdHis");
+$transactionRef = gmdate("YmdHis"); //this will be the registration number
 ?>
 
 <!DOCTYPE html>
@@ -40,7 +40,7 @@ $transactionRef = gmdate("YmdHis");
                 </div>
 
                 <div class="form-group">
-                    <label for="reference_number">Reference Number</label>
+                    <label for="reference_number">Registration Number</label>
                     <input type="text" readonly="readonly" name="reference_number" class="form-control"
                            value="<?= $transactionRef ?>">
                 </div>

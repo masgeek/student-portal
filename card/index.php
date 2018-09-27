@@ -6,7 +6,7 @@ $profileID = '066620B5-2B5D-49FD-88DC-C4CBA247122A';
 $amount = number_format(10, 2);
 $transactionRef = 'P52/85958/2016'; //this will be the registration number
 $transactionUUID = uniqid();//uniqid($gmtTimestamp, true);
-$transactionType = 'authorization';
+$transactionType = 'sale';
 ?>
 
 <!DOCTYPE html>

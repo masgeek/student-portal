@@ -40,7 +40,6 @@
 [signed_date_time] => 2018-09-28T13:45:54Z
 [req_bill_to_address_line1] => PO Box 9 Thika
  */
-
 // Map the above values to a database table
 $root_dir = dirname(dirname(__FILE__));
 
@@ -48,7 +47,7 @@ require_once $root_dir . '/vendor/autoload.php';
 
 $postData = $_POST;
 // Tell log4php to use our configuration file.
-Logger::configure($root_dir . '/config/config.xml');
+Logger::configure($root_dir . '/config/config.xml'); //check logs folder for how the response look like
 
 $callbackParams = serialize($postData);
 

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d8e2c4fee5101662903ff79b81022f61",
+    "content-hash": "389220671cdc70ac50798f27e8962a6e",
     "packages": [
         {
             "name": "adodb/adodb-php",
@@ -151,16 +151,16 @@
         },
         {
             "name": "fatelord/guzzle",
-            "version": "6.3.3",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fatelord/guzzle.git",
-                "reference": "407b0cb880ace85c9b63c5f9551db498cb2d50ba"
+                "reference": "00835016a46ed3de9632cc7053068058101936b4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fatelord/guzzle/zipball/407b0cb880ace85c9b63c5f9551db498cb2d50ba",
-                "reference": "407b0cb880ace85c9b63c5f9551db498cb2d50ba",
+                "url": "https://api.github.com/repos/fatelord/guzzle/zipball/00835016a46ed3de9632cc7053068058101936b4",
+                "reference": "00835016a46ed3de9632cc7053068058101936b4",
                 "shasum": ""
             },
             "require": {
@@ -217,9 +217,9 @@
                 "web service"
             ],
             "support": {
-                "source": "https://github.com/fatelord/guzzle/tree/6.3.3"
+                "source": "https://github.com/fatelord/guzzle/tree/master"
             },
-            "time": "2018-04-22T15:46:56+00:00"
+            "time": "2018-09-19T10:35:45+00:00"
         },
         {
             "name": "filp/whoops",
@@ -763,7 +763,9 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "fatelord/guzzle": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {

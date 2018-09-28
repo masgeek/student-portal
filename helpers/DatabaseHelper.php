@@ -39,7 +39,7 @@ class DatabaseHelper
         $this->dbh->debug = $debug;
     }
 
-    public function WriteCardTransaction(array $arrayData)
+    public function WriteCardTransaction(array $cardData)
     {
         /* @var $db \ADOConnection */
 

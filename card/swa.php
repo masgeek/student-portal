@@ -13,14 +13,14 @@ $transactionType = 'sale';
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Fees Payment CARDS</title>
+    <title>SWA Payment</title>
     <link rel="stylesheet" type="text/css" href="../vendor/bower-asset/bootstrap/dist/css/bootstrap.css"/>
     <link rel="stylesheet" type="text/css" href="../vendor/bower-asset/font-awesome/css/font-awesome.css"/>
 </head>
 
 <body>
 <div class="jumbotron text-center">
-    <h1>Student FEES Payment</h1>
+    <h1>SWA Payment</h1>
     <p>CARD PAYMENT</p>
 </div>
 

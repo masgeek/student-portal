@@ -5,13 +5,13 @@
  * Date: 08-Feb-18
  * Time: 11:
  *
- * @var $callback \helper\DATABASE_HELPER
+ * @var $callback \helper\DatabaseHelper
  */
 $root_dir = dirname(dirname(__FILE__));
 
 require_once $root_dir . '/vendor/autoload.php';
 require_once 'TRANSACTION_CALLBACKS.php';
-require_once $root_dir . '/helpers/DATABASE_HELPER.php';
+require_once $root_dir . '/helpers/DatabaseHelper.php';
 
 $data = [];
 $callbackJSONData = file_get_contents('php://input');
@@ -32,7 +32,7 @@ $log->info(json_decode($callbackJSONData));
 if (strlen($callbackJSONData) > 2) {
     $data = \mpesa\TRANSACTION_CALLBACKS::processSTKPushRequestCallback($callbackJSONData, true);
 
-    $callback = new \helper\DATABASE_HELPER();
+    $callback = new \helper\DatabaseHelper();
 
-    $resp = $callback->WriteSTKToDatabase($data);
+    $resp = $callback->WriteMpesaTransaction($data);
 }

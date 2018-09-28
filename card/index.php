@@ -22,7 +22,7 @@
                         <i class="fa fa-cc-mastercard fa-4x"></i>
                     </p>
                 </div>
-                <div class="card-footer"><a href="swa.php" class="btn btn-outline-success btn-block btn-lg">Fee
+                <div class="card-footer"><a href="swa.php" class="btn btn-outline-primary btn-block btn-lg">Fee
                         Payments</a>
                 </div>
             </div>

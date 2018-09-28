@@ -31,9 +31,8 @@ $log->info(json_decode($callbackJSONData));
 
 if (strlen($callbackJSONData) > 2) {
     $data = \mpesa\TRANSACTION_CALLBACKS::processSTKPushRequestCallback($callbackJSONData, true);
+
+    $callback = new \helper\DATABASE_HELPER();
+
+    $resp = $callback->WriteSTKToDatabase($data);
 }
-
-
-$callback = new \helper\DATABASE_HELPER();
-
-$resp = $callback->WriteSTKToDatabase($data);

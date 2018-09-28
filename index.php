@@ -26,7 +26,7 @@
                         <i class="fa fa-mobile-phone fa-4x"></i>
                     </p>
                 </div>
-                <div class="card-footer"><a href="mpesa/" class="btn btn-outline-success btn-block btn-lg disabled">MOBILE MONEY</a>
+                <div class="card-footer"><a href="mpesa/" class="btn btn-outline-success btn-block btn-lg">MOBILE MONEY</a>
                 </div>
             </div>
         </div>

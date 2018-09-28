@@ -20,7 +20,7 @@ $transactionRef = gmdate("YHs");
     <div class="row">
         <div class="col-sm-12">
             <!-- form -->
-            <form enctype="multipart/form-data" action="process_mpesa.php" method="post" name="mpesa-form">
+            <form enctype="multipart/form-data" action="#" method="post" name="mpesa-form" id="mpesa-form">
                 <div class="card">
                     <div class="card-header bg-success text-white">MOBILE MONEY PAYMENTS</div>
                     <div class="card-body">
@@ -53,7 +53,7 @@ $transactionRef = gmdate("YHs");
 
                     </div>
                     <div class="card-footer">
-                        <button type="submit" class="btn btn-primary btn-block btn-lg">Proceed</button>
+                        <button type="button" class="btn btn-primary btn-block btn-lg" id="pay">Proceed</button>
                     </div>
                 </div>
             </form>
@@ -64,7 +64,8 @@ $transactionRef = gmdate("YHs");
 </body>
 <script type="text/javascript" src="../vendor/bower-asset/jquery/dist/jquery.min.js"></script>
 <script type="text/javascript" src="../vendor/bower-asset/jquery.maskedinput/src/jquery.maskedinput.js"></script>
-<link rel="stylesheet" type="text/css" href="../vendor/bower-asset/bootstrap/dist/js/bootstrap.js"/>
+<script type="text/javascript" src="../vendor/bower-asset/bootstrap/dist/js/bootstrap.js"></script>
+<script type="text/javascript" src="../myassets/js/ajax-submission.js"></script>
 
 <script type="application/javascript">
     jQuery(function ($) {

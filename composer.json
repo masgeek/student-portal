@@ -14,7 +14,7 @@
         "php": ">=5.6.0",
         "safaricom/mpesa": "^1.0",
         "vlucas/phpdotenv": "^2.4",
-        "guzzlehttp/guzzle": "^6.3",
+        "fatelord/guzzle": "^6.3",
         "filp/whoops": "^2.1",
         "apache/log4php": "^2.3",
         "adodb/adodb-php": "^5.20",
@@ -29,6 +29,12 @@
             "enabled": false
         }
     },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/fatelord/guzzle.git"
+        }
+    ],
     "scripts": {
         "pre-update-cmd": [
             "yarn install --check-files"

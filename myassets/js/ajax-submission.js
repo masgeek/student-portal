@@ -8,8 +8,8 @@ $(function () {
             data: $('#mpesa-form').serialize(),
             success: function (data) {
                 //show relevant message to user based on response data e.g
-                if (data['ResponseCode'] === 0) { //0 means successful
-                    alert(data['CustomerMessage']);
+                if (data.ResponseCode === 0) { //0 means successful
+                    alert(data.CustomerMessage);
                 }
 
                 //lof the response

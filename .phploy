@@ -1,3 +1,6 @@
 [staging]
 pass = "barasa350"
 logger = on
+[live]
+pass = "barasa350"
+logger = on

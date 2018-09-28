@@ -1,0 +1,68 @@
+-- auto-generated definition
+create table FEE_PAYMENTS
+(
+  REG_NUMBER       VARCHAR2(20) not null
+    constraint FEE_PAYMENTS_BRW_F1
+    references UON_STUDENTS,
+  RECEIPT_NUMBER   VARCHAR2(20) not null
+    constraint FEE_PAYMENTS_BRW_P1
+    primary key
+    constraint FEE_PAYMENTS_BRW_C8
+    check ("RECEIPT_NUMBER" IS NOT NULL),
+  TRANS_DATE       DATE
+    constraint FEE_PAYMENTS_BRW_C2
+    check (TRANS_DATE IS NOT NULL),
+  TRANS_AMOUNT     NUMBER(12, 2) default 0
+    constraint FEE_PAYMENTS_BRW_C11
+    check ("TRANS_AMOUNT" IS NOT NULL),
+  ACADEMIC_PERIOD  VARCHAR2(50)
+    constraint FEE_PAYMENTS_BRW_F2
+    references ACADEMIC_PERIOD,
+  PAY_MODE         VARCHAR2(8)  not null
+    constraint FEE_PAYMENTS_BRW_F3
+    references PAYMENT_MODES,
+  COLLECTION_POINT VARCHAR2(10)
+    constraint FEE_PAYMENTS_BRW_F4
+    references COLLECTION_POINTS,
+  USERID           VARCHAR2(25),
+  ENTRY_DATE       DATE          default SYSDATE,
+  CHQ_NO           VARCHAR2(30),
+  CHQ_TYPE         VARCHAR2(20),
+  BANK             VARCHAR2(80),
+  BRANCH           VARCHAR2(80),
+  DRAWER           VARCHAR2(50),
+  ACCT_NO          VARCHAR2(30),
+  AUTHORIZE        VARCHAR2(20),
+  AUTHORIZE_DATE   DATE,
+  RECEIPT_STATUS   VARCHAR2(80),
+  RECEIPT_REF      VARCHAR2(25),
+  LEVEL_OF_STUDY   NUMBER(3),
+  SERIAL_NUMBER    VARCHAR2(20),
+  TRANS_TYPE       VARCHAR2(20),
+  DEPOSIT_DATE     DATE,
+  TRANS_ID         VARCHAR2(30),
+  EXCHANGE_RATE    NUMBER(8, 2)  default 1
+)
+/
+
+-- auto-generated definition
+create table FEES_TRANSACTIONS
+(
+  TRANS_ID        VARCHAR2(100) not null
+    constraint FEES_TRANSACTIONS1_BRW_P1
+    primary key,
+  F_PROGRESS_CODE VARCHAR2(50)  not null,
+  TRANS_DATE      DATE,
+  TRANS_TYPE      VARCHAR2(2),
+  TRANS_AMOUNT    NUMBER(15, 2),
+  TRANS_DESC      VARCHAR2(150),
+  USER_ID         VARCHAR2(30) default USER,
+  RECEIPT_STATUS  VARCHAR2(12),
+  LAST_UPDATE     DATE         default SYSDATE,
+  SEMESTERID      VARCHAR2(40),
+  BATCHNO         NUMBER(15),
+  TRANS_REFERENCE VARCHAR2(50),
+  EXCHANGE_RATE   NUMBER(8, 2) default 1
+)
+/
+

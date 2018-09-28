@@ -56,3 +56,5 @@ $log = Logger::getLogger('myLogger');
 
 // Start logging
 $log->info($postData);
+
+var_dump($_REQUEST);

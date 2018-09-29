@@ -26,16 +26,12 @@ class DatabaseHelper
      */
     public $dbh;
 
-    public function __construct($debug = false)
+    public function __construct($dbHost = '127.0.0.1', $user = 'muthoni', $pwd = 'andalite6', $db = 'XE', $port = 1521, $debug = false)
     {
 
-        $server = "127.0.0.1";
-        $user = "muthoni";
-        $pwd = "andalite6";
-        $db = "XE";
 
         $this->dbh = NewADOConnection('oci8');
-        $this->dbh->Connect(FALSE, $user, $pwd, '(DESCRIPTION = (ADDRESS = (PROTOCOL = TCP)(HOST = ' . $server . ')(PORT = 1521)) (CONNECT_DATA = (SERVICE_NAME = ' . $db . ') (SID = ' . $db . ')))');
+        $this->dbh->Connect(FALSE, $user, $pwd, '(DESCRIPTION = (ADDRESS = (PROTOCOL = TCP)(HOST = ' . $dbHost . ')(PORT = ' . $port . ')) (CONNECT_DATA = (SERVICE_NAME = ' . $db . ') (SID = ' . $db . ')))');
         $this->dbh->debug = $debug;
     }
 

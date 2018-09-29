@@ -8,8 +8,6 @@
 
 namespace helpers;
 
-use Medoo\Medoo;
-
 $root_dir = dirname(dirname(__FILE__));
 
 
